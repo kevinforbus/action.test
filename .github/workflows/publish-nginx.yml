@@ -1,12 +1,13 @@
-name: Push to Dockerhub
+name: Build nginx container
 
 on:
   push:
     branches: [main,master]
   pull_request:
     branches: [main,master]
+
 jobs:
-  nginx-container:
+  build:
     runs-on: ubuntu-latest
     
     steps:
