@@ -25,4 +25,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: kforbus/general:gh-action-test
+          tags: ${{ vars.DOCKERHUB_REPO }}
